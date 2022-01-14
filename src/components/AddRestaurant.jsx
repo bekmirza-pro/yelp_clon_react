@@ -14,16 +14,16 @@ const AddRestaurant = () => {
       const response = await RestaurantFinder.post("/", {
         restaurantName,
         location,
-        priceRange: priceRange,
+        priceRange: priceRange
       });
 
       addRestaurants(response.data);
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.log(error);
     }
   };
   return (
-    <div className="mb-4">
+    <div className="mb-4"> 
       <form action="">
         <div className="form-row">
           <div className="col">
