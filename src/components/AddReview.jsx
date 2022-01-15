@@ -44,6 +44,7 @@ const AddReview = () => {
               placeholder="name"
               type="text"
               className="form-control"
+              required
             />
           </div>
           <div className="form-group col-4">
@@ -52,7 +53,7 @@ const AddReview = () => {
               value={rating}
               onChange={(e) => setRating(e.target.value)}
               id="rating"
-              className="custom-select">
+              className="custom-select" required>
               <option disabled>Rating</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -68,7 +69,7 @@ const AddReview = () => {
             value={reviewText}
             onChange={(e) => setReviewText(e.target.value)}
             id="Review"
-            className="form-control"></textarea>
+            className="form-control" required></textarea>
         </div>
         <button
           type="submit"

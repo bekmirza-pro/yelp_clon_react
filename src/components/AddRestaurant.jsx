@@ -33,6 +33,7 @@ const AddRestaurant = () => {
               type="text"
               className="form-control"
               placeholder="name"
+              required
             />
           </div>
           <div className="col">
@@ -42,13 +43,14 @@ const AddRestaurant = () => {
               className="form-control"
               type="text"
               placeholder="location"
+              required
             />
           </div>
           <div className="col">
             <select
               value={priceRange}
               onChange={(e) => setPriceRange(e.target.value)}
-              className="custom-select mr-sm-2">
+              className="custom-select mr-sm-2" required>
               <option disabled>Price Range</option>
               <option value="1">$</option>
               <option value="2">$$</option>
