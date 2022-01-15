@@ -33,7 +33,7 @@ const AddReview = () => {
   };
   return (
     <div className="mb-2">
-      <form action="">
+      <form action="" onSubmit={handleSubmitReview}>
         <div className="form-row">
           <div className="form-group col-8">
             <label htmlFor="name">Name</label>
@@ -73,7 +73,6 @@ const AddReview = () => {
         </div>
         <button
           type="submit"
-          onClick={handleSubmitReview}
           className="btn btn-primary">
           Submit
         </button>

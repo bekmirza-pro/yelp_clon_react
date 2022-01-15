@@ -40,7 +40,7 @@ const UpdateRestaurant = (props) => {
 
   return (
     <div>
-      <form action="">
+      <form action=""   onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
@@ -77,7 +77,6 @@ const UpdateRestaurant = (props) => {
         </div>
         <button
           type="submit"
-          onClick={handleSubmit}
           className="btn btn-primary">
           Submit
         </button>
