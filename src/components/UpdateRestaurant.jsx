@@ -49,6 +49,7 @@ const UpdateRestaurant = (props) => {
             id="name"
             className="form-control"
             type="text"
+            required
           />
         </div>
 
@@ -60,6 +61,7 @@ const UpdateRestaurant = (props) => {
             id="location"
             className="form-control"
             type="text"
+            required
           />
         </div>
         <div className="form-group">
@@ -70,6 +72,7 @@ const UpdateRestaurant = (props) => {
             id="price_range"
             className="form-control"
             type="number"
+            required
           />
         </div>
         <button
