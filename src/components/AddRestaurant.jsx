@@ -24,7 +24,7 @@ const AddRestaurant = () => {
   };
   return (
     <div className="mb-4"> 
-      <form action="">
+      <form action=""    onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="col">
             <input
@@ -60,7 +60,6 @@ const AddRestaurant = () => {
             </select>
           </div>
           <button
-            onClick={handleSubmit}
             type="submit"
             className="btn btn-primary">
             Add
